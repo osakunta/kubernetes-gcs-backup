@@ -1,5 +1,7 @@
 Dockerfile
+.dockerignore
 Makefile
 README.md
 .git/
 .gitignore
+key.json
