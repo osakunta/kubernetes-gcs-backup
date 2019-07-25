@@ -22,4 +22,6 @@ RUN apt-get -yq  --no-install-suggests --no-install-recommends install \
 RUN gcloud config set project satakuntatalo-services
 RUN gcloud config set compute/zone europe-north1-c
 
+ENV GOOGLE_APPLICATION_CREDENTIALS=/app/key.json
+
 ENTRYPOINT /bin/bash
