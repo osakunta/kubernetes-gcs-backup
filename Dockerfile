@@ -24,4 +24,6 @@ RUN gcloud config set compute/zone europe-north1-c
 
 ENV GOOGLE_APPLICATION_CREDENTIALS=/app/key.json
 
+COPY . .
+
 ENTRYPOINT /bin/bash
