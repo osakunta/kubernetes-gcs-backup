@@ -5,7 +5,7 @@ LATEST := ${NAME}:latest
 EXEC   := kubernetes-gcs-backup
 
 docker-build:
-	sudo docker build --build-arg EXECUTABLE=${EXEC} -t ${IMAGE} .
+	sudo docker build -t ${IMAGE} .
 	sudo docker tag ${IMAGE} ${LATEST}
  
 docker-run:
